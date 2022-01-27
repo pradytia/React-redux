@@ -16,7 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Reducer from './redux/reducer'
 
 
-const globalStore = createStore(Reducer, {}, applyMiddleware(reduxThunk));
+const globalStore = createStore(Reducer, applyMiddleware(reduxThunk));
 ReactDOM.render(
   <Provider store={globalStore}>
     <BrowserRouter>

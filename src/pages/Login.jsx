@@ -7,8 +7,7 @@ import {Link} from 'react-router-dom';
 function LoginPage( props ){
 
     const onBtnClickLogin = () => {
-        console.log(props.login.username)
-        console.log(props.login.password)
+        console.log(props.login)
     }
 
     return(
@@ -37,7 +36,7 @@ function LoginPage( props ){
                 </p>
                 </Link>
 
-                {/* <button type="button" className="btn btn-primary btn-block" onClick={onBtnClickLogin}>Submit</button> */}
+                <button type="button" className="btn btn-primary btn-block" onClick={onBtnClickLogin}>Submit</button>
             </form>
     )
 }
